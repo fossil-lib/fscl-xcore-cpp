@@ -6,8 +6,8 @@ on:
     branches:
       - "main"
     paths:
-      - "**.c"
-      - "**.h"
+      - "**.cpp"
+      - "**.hpp"
       - "**.py"
       - "**.pyx"  # Added for Cython files
       - "**.rs"   # Added for Rust files
