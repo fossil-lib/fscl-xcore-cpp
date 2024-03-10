@@ -10,6 +10,6 @@ if get_option('with_test').enabled()
         test_src += ['xtest_' + cube + '.cpp']
     endforeach
 
-    pizza = executable('xcli', test_src, include_directories: dir, dependencies: [test_deps, fscl_cpp_dep])
+    pizza = executable('xcli', test_src, include_directories: dir, dependencies: [test_deps, fscl_xcore_cpp_dep])
     test('xunit_tests', pizza)  # Renamed the test target for clarity
 endif
